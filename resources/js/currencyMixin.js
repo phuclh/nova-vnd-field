@@ -13,7 +13,7 @@ export const currencyMixin = {
         },
 
         display(value) {
-            return format(value) + ' đ'
+            return this.format(value) + ' đ'
         },
 
         removeFormat(value) {

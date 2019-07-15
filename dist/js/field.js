@@ -10418,7 +10418,7 @@ var currencyMixin = {
             return parseInt(value).toFixed(0).replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1,");
         },
         display: function display(value) {
-            return format(value) + ' đ';
+            return this.format(value) + ' đ';
         },
         removeFormat: function removeFormat(value) {
             return parseInt(value.replace(/[^\d\.]/g, ""));
