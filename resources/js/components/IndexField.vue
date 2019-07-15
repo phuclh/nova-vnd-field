@@ -1,5 +1,5 @@
 <template>
-    <span v-if="!field.liveUpdate">{{ field.value }}</span>
+    <span v-if="!field.liveUpdate">{{ format(field.value) }}</span>
     <div v-else class="relative flex items-stretch">
         <!-- Thanks to https://github.com/wehaa/inline-field-update -->
         <input :id="field.name"
