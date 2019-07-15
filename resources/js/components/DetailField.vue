@@ -3,7 +3,11 @@
 </template>
 
 <script>
+    import {currencyMixin} from "../currencyMixin";
+
     export default {
+        mixins: [currencyMixin],
+
         props: ['resource', 'resourceName', 'resourceId', 'field'],
 
         computed: {
