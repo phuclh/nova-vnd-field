@@ -9,7 +9,11 @@ export const currencyMixin = {
         },
 
         format(value) {
-            return value.toFixed(0).replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1,")
+            return parseInt(value).toFixed(0).replace(/(\d)(?=(\d{3})+(?:\.\d+)?$)/g, "$1,")
+        },
+
+        display(value) {
+            return format(value) + ' đ'
         },
 
         removeFormat(value) {
