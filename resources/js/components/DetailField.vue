@@ -10,7 +10,7 @@
             formattedField() {
                 const field = this.field;
 
-                field.value = display(field.value);
+                field.value = this.display(field.value);
 
                 return field;
             }
